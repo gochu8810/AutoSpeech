@@ -48,7 +48,7 @@ function generateSpeechToDrive() {
  // try{
   var blob = Utilities.newBlob(decoded, "audio/mpeg", name);
  // }catch(e){
-  var myFolder = DriveApp.getFolderById('1_a3DQAc85St3VmkptAEzA3ZfasR5bfkY');
+  var myFolder = DriveApp.getFolderById('1_a3DQAc85St3VmkptAEzA3ZfasR5bf');
   myFolder.createFile('New File', 'Hello, world!', MimeType.PDF);
   myFolder.createFile(blob);
   // Logger.log("\nError: %s\nmimeType: %s\nfileSize: %s\nimageMediaMetadata: %s", e, mimeType, fileSize, imageMediaMetadata)
@@ -58,12 +58,12 @@ function generateSpeechToDrive() {
 
 function createFile(){
 
-  var myFolder = DriveApp.getFolderById('1_a3DQAc85St3VmkptAEzA3ZfasR5bfkY');
+  var myFolder = DriveApp.getFolderById('1_a3DQAc85St3VmkptAEzA3ZfasR5bf');
   myFolder.createFile('New File', 'Hello, world!', MimeType.PDF);
 
 }
 
 function driveTest() {
-  var myFolder = DriveApp.getFolderById("1_a3DQAc85St3VmkptAEzA3ZfasR5bfkY"); //フォルダを取得
+  var myFolder = DriveApp.getFolderById("1_a3DQAc85St3VmkptAEzA3ZfasR5bf"); //フォルダを取得
   Logger.log(myFolder.getName());
 }
